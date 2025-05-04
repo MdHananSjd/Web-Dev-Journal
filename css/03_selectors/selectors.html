@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Example</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        p{
+            font-size: 18px;
+            margin-left: 0px;
+            padding: 5px;
+        }
+
+        .highlight{
+            color: turquoise;
+        }
+
+        #header{
+            background-color: #333;
+            color: greenyellow;
+        }
+
+        input[type = "text"]{
+            border: 3px solid red;
+        }
+
+        article p{
+            background-color: grey;
+            color: greenyellow;            
+        }
+
+        div p{
+            background-color: black;
+            font-style: italic;
+            color: whitesmoke;
+        }
+
+        h2+p{
+            background-color: #7f0a0a;
+        }
+
+    </style>
+</head>
+<body>
+    <header id="header">This is the header</header>
+    <h1>Main Heading</h1>
+    <p>This paragraph is adjacent to h1 and demonstrates the adjacent sibling selector.</p>
+
+    <p>Regular paragraph</p>
+
+    <h2>Second Heading</h2>
+
+    <p class="highlight">This paragraph has the hihglight 
+        class, demonstrating the class selector.
+    </p>
+
+    <div>
+        <p>Let me know what you think of this website</p>
+    </div>
+    <input type="text" placeholder="I think...">
+    <br>
+    <input type="checkbox" name="" id="fire">
+    <label for="fire">This website fire?</label>
+    <br>
+    <button type="submit" aria-placeholder="Submit yo">submit</button>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat dolorem voluptates expedita? 
+        Ipsum rem quaerat rerum fugit voluptates repellendus id ratione eos reprehenderit tempore 
+        beatae et placeat quo iusto, illo, nulla alias deleniti itaque aliquam modi temporibus iste, 
+        eligendi impedit. Possimus ipsum ad placeat vitae ullam dolor quo blanditiis nihil officia! 
+        Temporibus sequi, atque dolorem corporis non recusandae quibusdam tempora doloremque deleniti 
+        in repellendus accusamus laudantium reprehenderit error asperiores aperiam quod illum totam 
+        praesentium, voluptatum, harum dolore! Consectetur blanditiis sapiente deleniti quis quod, 
+        iure totam veniam itaque, reprehenderit odit voluptates sed hic eveniet ratione nostrum saepe, 
+        rem dolores est? Quas eaque possimus facilis iste veritatis quod inventore, nemo reiciendis 
+        molestias adipisci accusantium atque doloribus ratione facilis, sapiente eos quisquam? Explicabo!
+    </p>
+
+    <article>
+        <p>
+            This paragraph is inside an article, showing descendent selector.
+        </p>
+    </article>
+
+    <h2>Sub Heading</h2>
+
+    <ul>
+        <li>Item 1</li>
+        <ul>
+            <li>Internal list item 1</li>
+            <li>Internal list item 2</li>
+        </ul>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <a href="#">This text goes to the top of the page
+    </a>
+
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+body{
+    font-family: Arial, Arial, Helvetica, sans-serif;
+    background-color: black;
+    padding: 0%;
+    margin: 0%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    background-color: orange;
+    border-radius: 10px;
+    padding: 30px;
+    width: 300px;
+}
+h1 {
+    color: black;
+    text-align: center;
+    margin-bottom: 40px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+input{
+    margin-bottom: 15px;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid black;
+    background-color: rgb(249, 245, 235);
+}
+button{
+    background-color: black;
+    border-radius: 8px;
+    color: whitesmoke;
+    padding: 8px;
+}
+
+button:hover{
+    background-color: rgb(82, 80, 80);
+}
+
