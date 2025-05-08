@@ -5,27 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Selectors Example</title>
     <style>
+
+        /*Universal selector*/
         *{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
+        /*paragraph selector*/
         p{
             font-size: 18px;
             margin-left: 0px;
             padding: 5px;
         }
 
-        /* .highlight{
+        /*Class selector*/
+        .highlight{
             color: turquoise;
-        } */
+        }
 
+        /*ID selector*/
         #header{
             background-color: #333;
             color: greenyellow;
         }
 
+        /*Input selector*/
         input[type = "text"]{
             border: 3px solid red;
         }
@@ -46,6 +52,7 @@
             background-color: #6711b3;
         }
 
+        /*Adjacent selector*/
         h2 + p{
             color: orangered;
         }
