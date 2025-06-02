@@ -40,6 +40,10 @@ h2{
     cursor: pointer;
 }
 
+.nav1 .login-btn:hover{
+    background-color: rgb(103, 103, 246);
+}
+
 .nav1 a::after{
     content: "";
     position: absolute;
@@ -97,5 +101,79 @@ h2{
 
 .nav2 .login-btn:hover{
     background-color: rgb(30, 188, 30);
-    border: 2px solid white;
+}
+
+.nav3{
+    background-color: #45a2bb;
+    padding: 10px;
+}
+
+.nav3 ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav3 a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    display: block; /*This line is reponsible for the vertical positioning of the dropdown elements*/
+    position: relative;
+}
+
+.nav3 a:hover{
+    font-weight: bold;
+}
+
+.nav3 .dropdown{
+    position: relative;
+}
+
+.nav3 .dropdown-content{
+    display: none;
+    position: absolute;
+}
+
+.nav3 .dropdown:hover .dropdown-content{
+    display: block;
+    position: absolute;
+    top: 100%;
+    background-color: #45a2bb;
+    min-width: 150px;
+    color: #254bf6;
+    font-size:large;
+}
+
+.nav3 .login-btn{
+    border: none;
+    padding: 10px 20px;
+    background-color: rgb(53, 52, 52);
+    color: whitesmoke;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.nav3 .login-btn:hover{
+    background-color: rgb(65, 65, 65);
+}
+
+.nav3 a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav3 a:hover::after{
+    transform: scaleX(1);
 }
