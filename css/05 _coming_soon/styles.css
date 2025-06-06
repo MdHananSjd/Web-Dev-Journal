@@ -7,14 +7,38 @@ html{
 }
 
 .container{
-    background: linear-gradient(180deg, rgb(0, 15, 128), rgb(25, 234, 164));
+    background: linear-gradient(135deg, rgb(0, 15, 128), rgb(25, 234, 164));
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
 }
 
-/* .content{
+.content{
     text-align: center;
-    background-color: rgba(255, 255, 255, 1);
-} */
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 2rem;
+    max-width: 400px;
+    width: 90%;
+}
+
+.logo{
+    width: 200px;
+    object-fit: contain;
+}
+
+h1{
+    color: #333;
+    margin-bottom: 20px;
+}
+
+p{
+    color: #5e5d5d;
+    margin-bottom: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
