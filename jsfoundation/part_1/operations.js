@@ -1,4 +1,3 @@
-
 let score = 102;
 let bonus = 25;
 let totalScore = score + bonus;
@@ -14,7 +13,3 @@ console.log(addition);
 console.log(subtract);
 console.log(mult);
 console.log(divi);
-
-BigInt number = 2**12212312
-
-console.log(number);
