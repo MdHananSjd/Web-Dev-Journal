@@ -40,8 +40,34 @@ for (let i=0 ; i<num.length ; i++){
 
 let anotherArray = []
 for (let i=0 ; i<multipliedNumbers.length ; i++){
-    console.log(multipliedNumbers[i]);
+    // console.log(multipliedNumbers[i]);
 
     anotherArray.push(multipliedNumbers[i])
 }
-console.log(anotherArray);
+// console.log(anotherArray);
+
+let teaTypes = ['black', 'orange', 'early grey', 'chai', 'oolong']
+let selectedTea = []
+for (const tea of teaTypes){
+    if(teaTypes[tea] !== 'chai'){
+        // console.log(teaTypes[tea]);
+        selectedTea.push(teaTypes[tea])
+    }else{
+        // console.log("chai detected. Skipping...");
+        
+        continue
+    }
+}
+
+// console.log(selectedTea);
+
+
+let worldCities = ['tokyo', 'delhi', 'vancouver', 'new york']
+
+worldCities.forEach((city) => {
+    if (city == 'delhi'){
+        return
+    }
+    console.log(city);
+    
+});
