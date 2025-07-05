@@ -6,13 +6,23 @@ function makeTea(typeOfTea){
 
 // makeTea('orange tea')
 
-function orderTea(teaType){
-    let tea = teaType
-    function confirmOrder(){
-        console.log(`Order confirmed for ${tea}`);
-    }
+// function orderTea(teaType){
+//     let tea = teaType
+//     function confirmOrder(){
+//         console.log(`Order confirmed for ${tea}`);
+//     }
 
-    return confirmOrder()
+//     return confirmOrder()
+// }
+
+// orderTea("earl grey")
+
+
+function createTeaMaker (teaType){
+    return function(teaType){
+        return `Making ${teaType}!`
+    }
 }
 
-orderTea("earl grey")
+let teaMaker = createTeaMaker()
+console.log(teaMaker('earl grey'));
