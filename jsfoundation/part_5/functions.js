@@ -26,3 +26,5 @@ function createTeaMaker (teaType){
 
 let teaMaker = createTeaMaker()
 console.log(teaMaker('earl grey'));
+
+
